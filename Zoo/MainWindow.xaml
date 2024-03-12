@@ -1,0 +1,29 @@
+﻿<Window x:Class="Zoo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zoo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.Row="1" Fill="LightGray"/>
+        <Rectangle Grid.Row="3" Fill="Gray"/>
+
+        <Menu Grid.Row="0" FontSize="18">
+            <MenuItem Header="User"/>
+            <MenuItem Header="Animal"/>
+            <MenuItem Header="Feeding"/>
+            <MenuItem Header="Food"/>
+        </Menu>
+
+        <TextBlock HorizontalAlignment="Left" Margin="300,0,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Zoo Management Application" VerticalAlignment="Center" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
