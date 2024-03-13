@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Zoo"
         mc:Ignorable="d"
         Title="NewAnimal" Height="450" Width="800">
-    
+    <!--Hello Alex, This is a test-->
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
