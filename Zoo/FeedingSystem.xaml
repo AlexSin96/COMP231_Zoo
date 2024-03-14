@@ -1,0 +1,81 @@
+﻿<Window x:Class="Zoo.FeedingSystem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zoo"
+        mc:Ignorable="d"
+        Title="FeedingSystem" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="Employee Name"
+                           HorizontalAlignment="Left"
+                           Margin="53,73,0,0"
+                           VerticalAlignment="Top" />
+                    <Label Content="Animal Name"
+                           HorizontalAlignment="Left"
+                           Margin="53,119,0,0"
+                           VerticalAlignment="Top" />
+                    <Label Content="Date"
+                           HorizontalAlignment="Left"
+                           Margin="54,167,0,0"
+                           VerticalAlignment="Top" />
+                    <Label Content="Remarks"
+                           HorizontalAlignment="Left"
+                           Margin="53,260,0,0"
+                           VerticalAlignment="Top" />
+                    <ComboBox HorizontalAlignment="Left"
+                              Margin="180,75,0,0"
+                              VerticalAlignment="Top"
+                              Width="120" />
+                    <ComboBox HorizontalAlignment="Left"
+                              Margin="180,119,0,0"
+                              VerticalAlignment="Top"
+                              Width="120" />
+                    <DatePicker HorizontalAlignment="Left"
+                                Margin="180,167,0,0"
+                                VerticalAlignment="Top" />
+                    <TextBox HorizontalAlignment="Left"
+                             Margin="180,264,0,0"
+                             TextWrapping="Wrap"
+                             Text=""
+                             VerticalAlignment="Top"
+                             Width="120" />
+                    <Label Content="Time"
+                           HorizontalAlignment="Left"
+                           Margin="54,214,0,0"
+                           VerticalAlignment="Top" />
+                    <TextBox HorizontalAlignment="Left"
+                             Margin="179,220,0,0"
+                             TextWrapping="Wrap"
+                             Text="HH:MM"
+                             VerticalAlignment="Top"
+                             Width="120"
+                             RenderTransformOrigin="0.5,0.5">
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform />
+                                <SkewTransform />
+                                <RotateTransform Angle="-0.048" />
+                                <TranslateTransform />
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}"
+                              Margin="20,20,20,140" />
+                    <Button Content="Refresh record"
+                            HorizontalAlignment="Left"
+                            Margin="20,320,0,0"
+                            VerticalAlignment="Top" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
