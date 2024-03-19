@@ -24,6 +24,7 @@
         </Menu>
 
         <TextBlock HorizontalAlignment="Left" Margin="300,0,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Zoo Management Application" VerticalAlignment="Center" FontWeight="Bold"/>
+        <DataGrid x:Name="dtGrid" Grid.Row="1" d:ItemsSource="{Binding}"/>
 
     </Grid>
 </Window>
